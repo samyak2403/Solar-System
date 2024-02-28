@@ -1,0 +1,149 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+}
+
+#solar-system {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 50px auto;
+    perspective: 1000px; /* Adding perspective for 3D effect */
+}
+
+.star {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #ffce00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    transform-style: preserve-3d; /* Ensure child elements preserve 3D transformations */
+}
+
+.planet-label {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mercury {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    top: 45%;
+    left: 20%;
+
+}
+
+#venus {
+    width: 15px;
+    height: 15px;
+    background: #f0f0f0;
+    top: 40%;
+    left: 35%;
+   
+}
+
+#earth {
+    width: 15px;
+    height: 15px;
+    background: #00f;
+    top: 35%;
+    left: 50%;
+}
+
+.satellite {
+    width: 50px;
+    height: 50px;
+    background-image: url('img/satellite.png'); /* Satellite body color */
+    background-size: cover;
+    position: absolute;
+}
+
+.antenna {
+    width: 4px;
+    height: 30px;
+    background-color: #000; /* Antenna color */
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mars {
+    width: 12px;
+    height: 12px;
+    background: #d75c37;
+    top: 32%;
+    left: 65%;
+ 
+}
+
+#jupiter {
+    width: 30px;
+    height: 30px;
+    background: #d8b878;
+    top: 25%;
+    left: 75%;
+ 
+}
+
+.moon {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #aaa;
+    position: absolute;
+}
+
+#saturn {
+    width: 25px;
+    height: 25px;
+    background: #c2b280;
+    top: 20%;
+    left: 85%;
+    
+}
+
+.rings {
+    width: 50px; /* Adjust ring size as needed */
+    height: 2px; /* Adjust ring height as needed */
+    background: #c2b280; /* Saturn ring color */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensure rings are behind the planet */
+}
+
+#uranus {
+    width: 20px;
+    height: 20px;
+    background: #afeeee;
+    top: 15%;
+    left: 90%;
+
+}
+
+#neptune {
+    width: 20px;
+    height: 20px;
+    background: #add8e6;
+    top: 10%;
+    left: 95%;
+
+}
