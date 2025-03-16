@@ -3,64 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A visual representation of the solar system">
+  <meta name="keywords" content="Solar System, Planets, Astronomy">
+  <meta name="author" content="Samyak2403">
   <title>Solar System</title>
-  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
-  <div id="solar-system">
-    <div id="sun" class="star"></div>
-
-
-  
-
-
-    <div id="mercury" class="planet">
-      <div class="moon"></div>
+  <main id="solar-system">
+    <div id="sun" class="star" role="img" aria-label="Sun"></div>
+    <div id="mercury" class="planet" role="img" aria-label="Mercury">
+      <div class="moon" role="img" aria-label="Moon"></div>
       <div class="planet-label">Mercury</div>
     </div>
-
-    <div id="venus" class="planet">
-      <div class="moon"></div>
-            <div class="planet-label">Venus</div>
+    <div id="venus" class="planet" role="img" aria-label="Venus">
+      <div class="moon" role="img" aria-label="Moon"></div>
+      <div class="planet-label">Venus</div>
     </div>
-
-    <div id="earth" class="planet">
-        <div id="moon" class="moon">
-          <div id="satellite" class="satellite">
-      
-          </div>
-          
-        </div>
-        <div class="planet-label">Earth</div>
-      <!-- Added satellite -->
+    <div id="earth" class="planet" role="img" aria-label="Earth">
+      <div id="moon" class="moon" role="img" aria-label="Moon">
+        <div id="satellite" class="satellite" role="img" aria-label="Satellite"></div>
+      </div>
+      <div class="planet-label">Earth</div>
     </div>
-    <div id="mars" class="planet">
-      <div class="moon"></div>
+    <div id="mars" class="planet" role="img" aria-label="Mars">
+      <div class="moon" role="img" aria-label="Moon"></div>
       <div class="planet-label">Mars</div>
     </div>
-    <div id="jupiter" class="planet">
-        <div id="ganymede" class="moon"></div>
-        <div id="callisto" class="moon"></div>
-        <div class="moon"></div>
-        <div class="planet-label">Jupiter</div>
+    <div id="jupiter" class="planet" role="img" aria-label="Jupiter">
+      <div id="ganymede" class="moon" role="img" aria-label="Ganymede"></div>
+      <div id="callisto" class="moon" role="img" aria-label="Callisto"></div>
+      <div class="moon" role="img" aria-label="Moon"></div>
+      <div class="planet-label">Jupiter</div>
     </div>
-    <div id="saturn" class="planet">
-        <div id="moon" class="moon"></div>
-        <div id="rhea" class="moon"></div>
-        <div class="moon"></div>
-        <div class="planet-label">Saturn</div>
-        <div class="rings"></div>
-      </div>
-    <div id="uranus" class="planet">
-      <div class="moon"></div>
-            <div class="planet-label">Uranus</div>
+    <div id="saturn" class="planet" role="img" aria-label="Saturn">
+      <div id="moon" class="moon" role="img" aria-label="Moon"></div>
+      <div id="rhea" class="moon" role="img" aria-label="Rhea"></div>
+      <div class="moon" role="img" aria-label="Moon"></div>
+      <div class="planet-label">Saturn</div>
+      <div class="rings" role="img" aria-label="Rings"></div>
     </div>
-    <div id="neptune" class="planet">
-      <div id="satellite" class="satellite"></div>
-      <div class="moon"></div>
-            <div class="planet-label">Neptune</div>
+    <div id="uranus" class="planet" role="img" aria-label="Uranus">
+      <div class="moon" role="img" aria-label="Moon"></div>
+      <div class="planet-label">Uranus</div>
     </div>
-  </div>
-  <script src="script.js"></script>
+    <div id="neptune" class="planet" role="img" aria-label="Neptune">
+      <div id="satellite" class="satellite" role="img" aria-label="Satellite"></div>
+      <div class="moon" role="img" aria-label="Moon"></div>
+      <div class="planet-label">Neptune</div>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
 </body>
 </html>
